@@ -152,7 +152,7 @@ func (pf *platformOfd) getCheck(c *colly.Collector, link string) (checkNumber in
 	c.OnHTML("div.cheque__section.cheque__kkt-info > div:nth-child(1) > p:nth-child(2)", func(e *colly.HTMLElement) {
 		fn = e.Text
 	})
-	c.OnHTML("div.cheque__section.cheque__shop-info > div:nth-child(1) > p:nth-child(2)", func(e *colly.HTMLElement) {
+	c.OnHTML("div.cheque__section.cheque__shop-info > div:nth-child(2) > p:nth-child(2)", func(e *colly.HTMLElement) {
 		time = e.Text
 	})
 
